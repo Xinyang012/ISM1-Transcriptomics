@@ -1,0 +1,28 @@
+# Extract of existing GSE271812-related code; upstream object must be created separately.
+# NOT A COMPLETE WORKFLOW. This file is for documenting what has been found.
+
+
+##############################################################
+## 4. Spearman correlation
+##############################################################
+
+cor.test.ifn.271812 <-
+  cor.test(
+    gsva.plot.data.271812$Ism1_VST,
+    gsva.plot.data.271812$GOBP_POSITIVE_REGULATION_OF_TYPE_I_INTERFERON_PRODUCTION,
+    method = "spearman",
+    exact = FALSE
+  )
+
+print(
+  cor.test.ifn.271812
+)
+
+
+
+
+
+
+
+
+
